@@ -8,19 +8,21 @@ const modal1 = document.querySelector('#add-resource-modal1');
 addResource.addEventListener('click',()=>{
 	modal.classList.toggle('modalshow');
 });
-addResource1.addEventListener('click',()=>{
-	modal1.classList.toggle('modalshow');
-});
-const closemodalbtn1 = document.querySelector('#closemodal1');
-closemodalbtn1.addEventListener('click',()=>{
-	modal1.classList.remove('modalshow');
-});
-
 const cmodal = document.querySelector('.form-modal');
 const closemodal = document.querySelector('#closemodal');
 closemodal.addEventListener('click',()=>{
 	cmodal.classList.remove('modalshow');
 })
+
+const closemodalbtn1 = document.querySelector('#closemodal1');
+closemodalbtn1.addEventListener('click',()=>{
+	modal1.classList.remove('modalshow');
+});
+addResource1.addEventListener('click',()=>{
+	modal1.classList.toggle('modalshow');
+});
+
+
 
 const bookmark = document.querySelector('.bookmark');
 bookmark.addEventListener('click',() =>{
