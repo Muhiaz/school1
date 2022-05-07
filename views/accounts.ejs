@@ -1,241 +1,222 @@
-<input type="checkbox" id="nav-toggle">
-<div class="sidebar">
 
-    <div class="sidebar-menu">
-        <ul>
-            <li class="active">
-                <a href="/dashboard"><span> <i class="fas fa-user-graduate"></i></span><span>Classes</span></a>
-            </li>
-            <% if( user.role == 'admin' ){ %>
-
-            <li>
-                <a href="/grade4"><span> <i class="fas fa-book-reader"></i></span><span>Grade 4</span></a>
-            </li>
-            <li>
-                <a href="/class5"><span> <i class="fas fa-book-reader"></i></span><span>Class 5</span></a>
-            </li>
-            <li>
-                <a href="/class6"><span> <i class="nav-icon fas fa-book-reader"></i></span><span>Class 6</span></a>
-            </li>
-            <li>
-                <a href="/class7"><span> <i class="nav-icon fas fa-book-reader"></i></span><span>Class 7</span></a>
-            </li>
-            <li>
-                <a href="/class8"><span> <i class="nav-icon fas fa-book-reader"></i></span><span>Class 8</span></a>
-            </li>
-            <li>
-                <a href="/form1"><span> <i class="nav-icon fas fa-book-reader"></i></span><span>Form 1</span></a>
-            </li>
-            <li>
-                <a href="/form2"><span> <i class="fas fa-book-reader"></i></span><span>Form 2</span></a>
-            </li>
-            <li>
-                <a href="/form3"><span> <i class="nav-icon fas fa-book-reader"></i></span><span>Form 3</span></a>
-            </li>
-            <li>
-                <a href="/form4"><span> <i class="nav-icon fas fa-book-reader"></i></span><span>Form 4</span></a>
-            </li>
-            <% } else if(user.level == 'Secondary'){ %>
-            <li>
-                <a href="/form1"><span> <i class="fas fa-book-reader"></i></span><span>Form 1</span></a>
-            </li>
-            <li>
-                <a href="/form2"><span> <i class="fas fa-book-reader"></i></span><span>Form 2</span></a>
-            </li>
-            <li>
-                <a href="/form3"><span> <i class="fas fa-book-reader"></i></span><span>Form 3</span></a>
-            </li>
-            <li>
-                <a href="/form4"><span> <i class="fas fa-book-reader"></i></span><span>Form 4</span></a>
-            </li>
-            <% } else if(user.level == 'Primary'){ %>
-            <li>
-                <a href="/grade4"><span> <i class="fas fa-book-reader"></i></span><span>Grade 4</span></a>
-            </li>
-            <li>
-                <a href="/class5"><span> <i class="fas fa-book-reader"></i></span><span>Class 5</span></a>
-            </li>
-            <li>
-                <a href="/class6"><span> <i class="fas fa-book-reader"></i></span><span>Class 6</span></a>
-            </li>
-            <li>
-                <a href="/class7"><span> <i class="fas fa-book-reader"></i></span><span>Class 7</span></a>
-            </li>
-            <li>
-                <a href="/class8"><span> <i class="fas fa-book-reader"></i></span><span>Class 8</span></a>
-            </li>
-            <% } %>
-
-            <li>
-                <a href="/accounts"><span><i class="nav-icon fas fas fa fa-tags"></i></span><span>My Payments</span></a>
-            </li>
-            <h5 style="margin-left:2rem;color:gray;margin-top:2rem;margin-bottom:2rem;">Follow us</h5>
-            <li>
-                <a href="/facebook"><span><i class="fab fa-facebook-f"></i></span><span>Facebook</span></a>
-            </li>
-            <li>
-                <a href="/youtube"><span><i class="fab fa-twitter"></i></span><span>Twitter</span></a>
-            </li>
-            <li>
-                <a href="/youtube"><span><i class="fab fa-linkedin"></i></span><span>Linkedin</span></a>
-            </li>
-            <li>
-                <a href="/profile"><span> <i class="nav-icon fas fa-user-alt"></i></span><span> My Profile</span></a>
-            </li>
-            <li>
-                <a href="/users/logout"><span> <i class="nav-icon fa fa-power-off"></i></span><span> Log out</span></a>
-            </li>
-        </ul>
+    <input type="checkbox" id="nav-toggle">
+     <div class="sidebar">
+        <div class="sidebar-brand">
+                <a href="#"><span></span><span><img style="width:90px;height:60px;margin:auto 10px;" src="/Images/schoolmet_icon-bg.png"></span><span style="color:yellow">Schoolmet</span></a>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li class="active">
+                    <a href="/dashboard"><span> <i class="fas fa-user-graduate"></i></span><span>Classes</span></a>
+                </li>
+                <% if( user.role == 'admin' ){ %>
+               
+                <li>
+                    <a href="/grade4"><span> <i class="fas fa-book-open"></i></span><span>Grade 4</span></a>
+                </li>
+                <li>
+                    <a href="/class5"><span> <i class="fas fa-book-alt"></i></span><span>Class 5</span></a>
+                </li>
+                <li>
+                    <a href="/class6"><span> <i class="nav-icon fas fa-user-alt"></i></span><span>Class 6</span></a>
+                </li>
+                <li>
+                    <a href="/class7"><span> <i class="nav-icon fas fa-user-alt"></i></span><span>Class 7</span></a>
+                </li>
+                <li>
+                    <a href="/class8"><span> <i class="nav-icon fas fa-user-alt"></i></span><span>Class 8</span></a>
+                </li>
+                <li>
+                    <a href="/form1"><span> <i class="nav-icon fas fa-user-alt"></i></span><span>Form 1</span></a>
+                </li>
+                <li>
+                    <a href="/form2"><span> <i class="fas fa-chalkboard-teacher"></i></span><span>Form 2</span></a>
+                </li>
+                <li>
+                    <a href="/form3"><span> <i class="nav-icon fas fa-user-alt"></i></span><span>Form 3</span></a>
+                </li>
+                <li>
+                    <a href="/form4"><span> <i class="nav-icon fas fa-user-alt"></i></span><span>Form 4</span></a>
+                </li>
+                <% } else if(user.level == 'Secondary'){ %>
+                <li>
+                    <a href="/form1"><span> <i class="fas fa-book-open"></i></span><span>Form 1</span></a>
+                </li>
+                <li>
+                    <a href="/form2"><span> <i class="fas fa-chalkboard-teacher"></i></span><span>Form 2</span></a>
+                </li>
+                <li>
+                    <a href="/form3"><span> <i class="fas fa-book-reader"></i></span><span>Form 3</span></a>
+                </li>
+                <li>
+                    <a href="/form4"><span> <i class="fas fa-award"></i></span><span>Form 4</span></a>
+                </li>
+                <% } else if(user.level == 'Primary'){ %>
+                <li>
+                    <a href="/grade4"><span> <i class="fas fa-book-open"></i></span><span>Grade 4</span></a>
+                </li>
+                <li>
+                    <a href="/class5"><span> <i class="fas fa-chalkboard-teacher"></i></span><span>Class 5</span></a>
+                </li>
+                <li>
+                    <a href="/class6"><span> <i class="fas fa-book-reader"></i></span><span>Class 6</span></a>
+                </li>
+                <li>
+                    <a href="/class7"><span> <i class="fas fa-award"></i></span><span>Class 7</span></a>
+                </li>
+                <li>
+                    <a href="/class8"><span> <i class="fas fa-shapes"></i></span><span>Class 8</span></a>
+                </li>
+                  <% } %>
+                 
+                <li>
+                    <a href="/accounts"><span><i class="nav-icon fas fas fa fa-tags"></i></span><span>My Payments</span></a>
+                </li>
+                <h5 style="margin-left:2rem;color:gray;margin-top:2rem;margin-bottom:2rem;">Follow us</h5>
+                <li>
+                    <a href="/facebook"><span><i class="fab fa-facebook-f"></i></span><span>Facebook</span></a>
+                </li>
+                <li>
+                    <a href="/youtube"><span><i class="fab fa-twitter"></i></span><span>Twitter</span></a>
+                </li>
+                <li>
+                    <a href="/youtube"><span><i class="fab fa-linkedin"></i></span><span>Linkedin</span></a>
+                </li>
+                <li>
+                    <a href="/profile"><span> <i class="nav-icon fas fa-user-alt"></i></span><span> My Profile</span></a>
+                </li>
+                <li>
+                    <a href="/users/logout"><span> <i class="nav-icon fa fa-power-off"></i></span><span> Log out</span></a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-<div class="main-content">
+    <div class="main-content">
 
-    <header>
-        <div class="header-content">
-            <div class="bars">
-                <div>
+        <header>
+            <div class="header-content">
+        <div class="bars">
+            <div>
+            
+            </div>
+            <label for="nav-toggle">
 
-                </div>
-                <label for="nav-toggle">
-
-                    <h3><i class="nav-icon fas fas fa fa-bars"></i></h3>
-                </label>
-            </div>
-            <div class="input">
-                <input type="text" placeholder="Search her...">
-                <span></span>
-            </div>
-            <div class="profile">
-                <div class="row">
-                    <div class="col-md-2">
-                        <img src="/Images/avatar5.png"
-                            style="height:100%;width:145%;margin-top:10px;border-radius:50%;">
-                    </div>
-                    <div class="col-md-10">
-                        <H5 style="width:100%">
-                            <p style="line-height:20px;">Enjoy learning <br><%= user.name %></p>
-                        </H5>
-                    </div>
-                </div>
-            </div>
+<h3><i class="nav-icon fas fas fa fa-bars"></i></h3>
+</label>
         </div>
-    </header>
-    <main>
-        <div class="col-md-12" style="margin:20px auto;">
-            <h3 style="text-align:center;margin:auto">My payment information</h3>
-        </div><br>
-        <div class="row" style="margin:50px auto;">
-            <% if( user.role == 'admin'){ %>
-            <div class="col-md-3">
-                <button class="btn btn-primary" id="add-resource">Add Payment</button>
-            </div>
-            <div class="col-md-3">
-                <button class="btn btn-warning">Payment report</button>
-            </div>
-            <% } %>
-            <div class="col-md-3">
-
-            </div>
+        <div class="input">
+            <input type="text" placeholder="Search her...">
+            <span></span>
         </div>
-</div>
-</header>
-<main>
-    <div class="col-md-12" style="margin:20px auto;">
+        <div class="profile">
         <div class="row">
-            <div class="col-md-6">
-                <h3 style="text-align:center;margin:auto">My payment information</h3>
+        <div class="col-md-2">
+            <img src="/Images/avatar5.png" style="height:100%;width:145%;margin-top:10px;border-radius:50%;">
             </div>
-            <div class="col-md-6">
-                <button class="btn btn-primary" id="add-resource">Add Payment</button>
+             <div class="col-md-10">
+            <H5 style="width:100%"><p style="line-height:20px;">Enjoy learning <br><%= user.name %></p></H5>
             </div>
         </div>
+        </div>
+        </div>
+        </header>
+        <main>
+           <div class="col-md-12" style="margin:20px auto;">
+           <div class="row">
+           <div class="col-md-6">
+           <h3 style="text-align:center;margin:auto">My payment information</h3>
+           </div>
+           <div class="col-md-6">
+           <button class="btn btn-primary" id="add-resource">Add Payment</button>
+           </div>
+           </div>
     </div><br>
-    <div class="row" style="margin:50px auto;">
-        <% if( user.role == 'admin'){ %>
-        <div class="col-md-3">
-
-        </div>
-        <div class="col-md-3">
-            <button class="btn btn-warning">Payment report</button>
-        </div>
-        <% } %>
-        <div class="col-md-3">
-
-        </div>
+         <div class="row" style="margin:50px auto;">
+    <% if( user.role == 'admin'){ %>
+    <div class="col-md-3">
+    
     </div>
-    <table class="table table-bordered">
-        <thead style="background-color:yellow;">
+    <div class="col-md-3">
+    <button class="btn btn-warning">Payment report</button>
+    </div>
+    <% } %>
+     <div class="col-md-3">
+   
+    </div>
+    </div>
+            <table class="table table-bordered">
+            <thead style="background-color:yellow;">
             <tr>
-                <th>Transaction ID</th>
-                <th>Amount</th>
-                <th>Date</th>
-                <th>Action</th>
+            <th>Transaction ID</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Action</th>
             </tr>
-        </thead>
-        <tbody>
-
-        </tbody>
-    </table>
-    <div class="form-modal" id="add-resource-modal">
-        <div class="mymodal-content">
-            <i class="fa fa-times closemodal" id="closemodal"></i>
-            <div class="mymodal-header">Add Payment</div>
-            <hr style width="100%;background-color:#000;color:#000;">
-            <div class="mymodal-body">
-                <div class="col-md-8">
-                    <form action="/addresource" method="POST">
-                        <div class="form-group">
-                            <div class="col-md-8">
-                                <label>Transaction reference</label>
-                                <input type="text" class="form-control" name="name">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="col-md-8">
-                                    <div class="form-group">
-                                        <label>Phone number</label>
-                                        <input type="text" class="form-control" name="level">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                                <label>Description</label>
-                                <textarea type="text" class="form-control" name="description" required="true">
+            </thead>
+            <tbody>
+           
+            </tbody>
+            </table>
+             <div class="form-modal" id="add-resource-modal">
+             <div class="mymodal-content">
+             <i class="fa fa-times closemodal" id="closemodal"></i>
+             <div class="mymodal-header">Add  Payment</div>
+             <hr style width="100%;background-color:#000;color:#000;">
+             <div class="mymodal-body">
+             <div class="col-md-8">
+             <form action="/addresource" method="POST">
+             <div class="form-group">
+             <div class="col-md-8">
+             <label>Transaction reference</label>
+             <input type="text" class="form-control" name="name">
+             </div>
+             </div>
+             <div class="row">
+             <div class="col-md-12">
+             <div class="col-md-8">
+             <div class="form-group">
+             <label>Phone number</label>
+             <input type="text" class="form-control" name="level">
+             </div>
+             </div>
+             </div>
+             </div>
+             <div class="col-md-8">
+             <div class="form-group">
+             <label>Description</label>
+             <textarea type="text" class="form-control" name="description" required="true">
              </textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group" name="file">
-                                <label>Upload</label>
-                                <input type="file" class="form-control">
-                            </div>
-                        </div>
-                </div>
-            </div>
-            <div class="col-md-4"><img src="/Images/1200px-M-PESA_LOGO-01.svg.png"></div>
-            <div class="mymodal-footer">
-                <div class="row">
-                    <div class="col-md-12">
-                        <hr class="footerpartition">
-                        <div class="col-md-12">
-                            <button class="btn btn-default" id="closemodalbtn">Close</button>
-                            <button type="submit" class="btn btn-primary">Save</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+             </div>
+             </div>
+             <div class="col-md-8">
+             <div class="form-group" name="file">
+             <label>Upload</label>
+             <input type="file" class="form-control">
+             </div>
+             </div>
+             </div>
+             </div>
+             <div class="col-md-4"><img src="/Images/1200px-M-PESA_LOGO-01.svg.png" ></div>
+             <div class="mymodal-footer">
+             <div class="row">
+             <div class="col-md-12">
+             <hr class="footerpartition">
+             <div class="col-md-12">
+             <button class="btn btn-default" id="closemodalbtn">Close</button>
+             <button type="submit" class="btn btn-primary">Save</button>
+             </form>
+             </div>
+             </div>
+             </div>
+             </div>
+             </div>
+             </div>
+             <div class="mode">
+             <div class="mode-head">
+             <div class="col-md-12">Lipa na <img src="">
+             </div>
+             <div class="mode-body">
+             </div>
+             </div>
+        </main>
     </div>
-    <div class="mode">
-        <div class="mode-head">
-            <div class="col-md-12">Lipa na <img src="">
-            </div>
-            <div class="mode-body">
-            </div>
-        </div>
-</main>
-</div>

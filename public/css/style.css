@@ -617,7 +617,14 @@ img {
 .infoimg .col-md-6 {
 	padding: 0px;
 }
-
+.pay {
+    background-color: green;
+    color: #fff;
+    padding: 3px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
 .infoimg img {
 	width: 100%;
 	border-radius: 10px;
