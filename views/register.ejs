@@ -1,15 +1,20 @@
 <header class="header">
   <div class="navigation bd-grid">
     <div class="nav__logo">
-      <a href="/"><img src="/Images/schoolmate logo n.png"></a>
+      <a href="#"><img src="/Images/schoolmet icon.png"></a>
     </div>
-
     <div class="nav__menu" id="nav-menu">
       <ul class="nav__list">
-        <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Virtual Classes</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Quiz room</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Mock tests</a></li>
         <li class="nav__item"><a href="/blog" class="nav__link">Blog</a></li>
         <li class="nav__item"><a href="/users/login" class="nav__link">Login</a></li>
-
+        <li class="nav__item"><a href="/users/register" class="nav__link">Register</a></li>
+        <li class="nav__item"><a href="#contactsus" class="nav__link">Contact</a></li>
       </ul>
     </div>
     <div class="nav__toggle" id="nav-toggle">
@@ -18,110 +23,95 @@
   </div>
 </header>
 <div class="page_body">
-  <div class="register-form">
-    <h1>
-      <a href="#"><img src="/Images/bb.gif" style="width:50px;height:50px;"></a>
-      Register to SchoolMate and start learning
-    </h1>
-    <%- include ('./partials/messages') %>
-    <form action="/users/register" method="POST">
-      <div>
-        <label for="name">Name</label>
-        <input class="form-control" type="name" name="name" placeholder="Enter your name"
-          value="<%= typeof name != 'undefined' ? name : '' %>" />
-
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input class="form-control" type="email" name="email" placeholder="Enter your email"
-          value="<%= typeof email != 'undefined' ? email : '' %>" />
-      </div>
-      <div>
-        <label for="county">County</label>
-
-        <select class="form-control" type="text" name="county" placeholder="Enter County"
-          value="<%= typeof county != 'undefined' ? county : '' %>" />
-        <option></option>
-        <option>Mombasa</option>
-        <option>Kwale</option>
-        <option>Kilifi</option>
-        <option>Tana River</option>
-        <option>Lamu</option>
-        <option>Taita/Taveta</option>
-        <option>Garissa</option>
-        <option>Wajir</option>
-        <option>Mandera</option>
-        <option>Marsarbit</option>
-        <option>Isiolo</option>
-        <option>Meru</option>
-        <option>Tharaka-Nithi</option>
-        <option>Embu</option>
-        <option>Kitui</option>
-        <option>Machakos</option>
-        <option>Makueni</option>
-        <option>Nyandarua</option>
-        <option>Nyeri</option>
-        <option>Kirinyaga</option>
-        <option>Murang'a</option>
-        <option>Kiambu</option>
-        <option>Turkana</option>
-        <option>West Pokot</option>
-        <option>Samburu</option>
-        <option>Trans Nzoia</option>
-        <option>Uasin Gishu</option>
-        <option>Elgeyo/Marakwet</option>
-        <option>Nandi</option>
-        <option>Baringo</option>
-        <option>Laikipia</option>
-        <option>Nakuru</option>
-        <option>Narok</option>
-        <option>Kajiado</option>
-        <option>Kericho</option>
-        <option>Bomet</option>
-        <option>Kakamega</option>
-        <option>Vihiga</option>
-        <option>Bungoma</option>
-        <option>Busia</option>
-        <option>Siaya</option>
-        <option>Kisumu</option>
-        <option>Homa Bay</option>
-        <option>Migori</option>
-        <option>Kisii</option>
-        <option>Nyamira</option>
-        <option>Nairobi</option>
-        <select>
-      </div>
-      <div>
-        <label for="level">Level</label>
-        <select class="form-control" type="text" name="level" placeholder="Enter Level"
-          value="<%= typeof level != 'undefined' ? level : '' %>" />
-        <option></option>
-        <option>Primary</option>
-        <option>Secondary</option>
-        </select>
-
-      </div>
-      <div>
-        <label for="password">Password</label>
-        <input class="form-control" type="password" name="password" placeholder="Create Password"
-          value="<%= typeof password != 'undefined' ? password : '' %>" />
-      </div>
-      <div>
-        <label for="password2">Confirm Password</label>
-        <input class="form-control" type="password" name="password2" placeholder="Confirm Password"
-          value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
-      </div>
-      <div>
-        <label for="role"></label>
-        <input class="form-control" type="hidden" name="role" placeholder="Role" value="user" />
-      </div>
-      <br>
-      <button type="submit" class="btn btn-primary btn-block">
-        Register
-      </button>
-    </form>
-    <p>Already have an account? <a href="/users/login">Login</a></p>
-    <button class="btn btn-secondary btn-block"><a href="/">Home</a>
-    </button>
+<div class="register-form">
+<h1>Register</h1>
+<%- include ('./partials/messages') %>
+<form action="/users/register" method="POST">
+<div>
+    <label for="name">Name</label>
+    <input class="form-control"
+      type="name"
+      name="name"
+      placeholder="Enter Name"
+      value="<%= typeof name != 'undefined' ? name : '' %>"
+    />
+  
+</div>
+<div >
+    <label for="email">Email</label>
+    <input class="form-control"
+      type="email"
+      name="email"
+      placeholder="Enter Email"
+      value="<%= typeof email != 'undefined' ? email : '' %>"
+    />
   </div>
+  <div >
+    <label for="county">County</label>
+    <input class="form-control"
+      type="text"
+      name="county"
+      placeholder="Enter County"
+      value="<%= typeof county != 'undefined' ? county : '' %>"
+    />
+  </div>
+
+  <div >
+    <label for="county">Phone number</label>
+    <input class="form-control"
+      type="text"
+      name="phonenumber"
+      placeholder="+254...."
+      value="<%= typeof phonenumber != 'undefined' ? phonenumber : '' %>"
+    />
+  </div>
+
+
+   <div >
+    <label for="level">Level</label>
+    <select class="form-control"
+      type="text"
+      name="level"
+      placeholder="Enter Level"
+      value="<%= typeof level != 'undefined' ? level : '' %>"
+    />
+    <option></option>
+    <option>Primary</option>
+    <option>Secondary</option>
+    </select>
+  </div>
+  <div >
+    <label for="password">Password</label>
+    <input class="form-control"
+      type="password"
+      name="password"
+      placeholder="Create Password"
+      value="<%= typeof password != 'undefined' ? password : '' %>"
+    />
+  </div>
+  <div >
+    <label for="password2">Confirm Password</label>
+    <input class="form-control"
+      type="password"
+      name="password2"
+      placeholder="Confirm Password"
+      value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+    />
+  </div>
+  <div >
+    <label for="role">Role</label>
+    <input class="form-control"
+      type="hidden"
+      name="role"
+      placeholder="Role"
+      value="user"
+    />
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary btn-block">
+    Register
+  </button>
+</form>
+<p >Have An Account? <a href="/users/login">Login</a></p>
+</div>
 </div>
